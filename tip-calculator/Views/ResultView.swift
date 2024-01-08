@@ -64,7 +64,7 @@ class ResultView: UIView {
             totalTipView
         ])
         stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fillProportionally
         return stackView
     }()
     

@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import Combine
 import CombineCocoa
+import SwiftUI
 
 class CalculatorVC: UIViewController {
 
@@ -148,4 +149,22 @@ class CalculatorVC: UIViewController {
 
 
 }
+//Preview UIKit
+struct CalculatorVCRepresentable: UIViewControllerRepresentable {
+    
+    typealias UIViewControllerType = 
+    CalculatorVC
+    
+    func makeUIViewController(context: Context) -> CalculatorVC {
+        CalculatorVC()
+    }
+    
+    func updateUIViewController(_ uiViewController: CalculatorVC, context: Context) {
+        
+    }
+    
+}
 
+#Preview {
+    CalculatorVCRepresentable()
+}

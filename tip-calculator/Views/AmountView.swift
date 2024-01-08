@@ -28,6 +28,8 @@ class AmountView: UIView {
         ],
         range: NSRange(location: 0, length: 1))
         label.attributedText = text
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.8
         return label
     }()
     
